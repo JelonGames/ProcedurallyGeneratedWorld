@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c952b17cf5e1c489bf31e94ac8041a, type: 3}
+  m_Name: Forest
+  m_EditorClassIdentifier: 
+  Exit:
+    Name: Exit
+    Prefab: {fileID: 3414129226224582922, guid: a30a7993a4ff81f4ab066dca628ff35c, type: 3}
+    Size: {x: 3, y: 3}
+  worldObjects:
+  - Name: Home
+    Prefab:
+    - {fileID: 6242597540058362326, guid: 2050cc4e16098324c97f72c013df9d8b, type: 3}
+    Size: {x: 5, y: 4}
+    IsMandatory: 1
+    MaxCount: 3
+    MinMaxPerlinValue: {x: 1, y: 10}
+  - Name: Trees
+    Prefab:
+    - {fileID: 6636674178365401854, guid: 88502c42b5d43dd4f9bd54616887dfb6, type: 3}
+    - {fileID: 1228805870944949847, guid: 07747bf2b3c3cee47900700e430da318, type: 3}
+    Size: {x: 1, y: 1}
+    IsMandatory: 0
+    MaxCount: 0
+    MinMaxPerlinValue: {x: 50, y: 60}
+  - Name: Bush
+    Prefab:
+    - {fileID: 1948761111654333183, guid: fb7a9e70e98bb634f91e1634754e79b3, type: 3}
+    - {fileID: 1343221998485061287, guid: 6f9ec52a6cd4278498e635034dec7f02, type: 3}
+    - {fileID: 6609691354903545079, guid: 809a4527a8736754e9e55f705e19c056, type: 3}
+    - {fileID: 7749061028119563609, guid: 038f6883a754f2d408fe199f590f81fd, type: 3}
+    Size: {x: 1, y: 1}
+    IsMandatory: 0
+    MaxCount: 0
+    MinMaxPerlinValue: {x: 60, y: 70}
+  Enemies:
+  - Name: SlimeWolf
+    Prefab: {fileID: 3522488483701419171, guid: 674956381a85fc2418f688cd5fc63380, type: 3}
+    Count: {x: 0, y: 25}
+    Size: {x: 1, y: 1}
